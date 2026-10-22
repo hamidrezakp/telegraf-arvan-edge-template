@@ -1,0 +1,22 @@
+{
+  "name": "telegraf-arvan-edge-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegraf bot template for ArvanCloud Edge Computing",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "npm run build && node scripts/dev.js",
+    "test": "npm run build && node --experimental-vm-modules --test",
+    "deploy": "node scripts/deploy.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "telegraf": "4.16.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
